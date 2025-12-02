@@ -1,0 +1,14 @@
+{
+    "messages": {
+        "role": [
+            "system",
+            "user"
+        ],
+        "content": [
+            "You are a helpful assistant.\n\nSolve the following problem step by step, and optionally write Python code for image manipulation to enhance your reasoning process. The Python code will be executed by an external sandbox, and the processed image or result (wrapped in <sandbox_output></sandbox_output>) can be returned to aid your reasoning and help you arrive at the final answer.\n\n**Reasoning & Image Manipulation (Optional but Encouraged):**\n    * You have the capability to write executable Python code to perform image manipulations (e.g., cropping to a Region of Interest (ROI), resizing, rotation, adjusting contrast) or perform calculation for better reasoning.\n    * The code will be executed in a secure sandbox, and its output will be provided back to you for further analysis.\n    * All Python code snippets **must** be wrapped as follows:\n    <code>\n    ```python\n    # your code.\n    ```\n    </code>\n    * At the end of the code, print the path of the processed image (processed_path) or the result for further processing in a sandbox environment.",
+            "<image>\nMr. Barton, a track coach, recorded the sizes of all the nearby track teams. How many teams have at least 22 members but fewer than 52 members?\n\n### User Image Path:** \"/mllm_hdd/yfzhang/Agent-R1/construct_data/deepeyes/images/data_thinklite_reasoning_acc_image_198.png\"\n### User Image Size:** \"297x158\"\n\n### **Output Format (strict adherence required):**\n\n<think>Your detailed reasoning process, including any code, should go here.</think>\n<answer>Your final answer to the user's question goes here.</answer>\n"
+        ]
+    },
+    "question": "Mr. Barton, a track coach, recorded the sizes of all the nearby track teams. How many teams have at least 22 members but fewer than 52 members?",
+    "solution": "13"
+}
